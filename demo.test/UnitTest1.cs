@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace demo.test
@@ -17,8 +18,11 @@ namespace demo.test
         [TestMethod]
         public void TestMethod1()
         {
-            var number = random.Next(0,1);
-            Assert.AreEqual(0, number);
+            for(var i = 0; i < 10; i++)
+            {
+                var number = random.Next(0,1);
+                Assert.AreEqual(0, number);
+            }
         }
     }
 }
