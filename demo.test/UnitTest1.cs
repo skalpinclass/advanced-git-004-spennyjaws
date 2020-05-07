@@ -12,7 +12,7 @@ namespace demo.test
         [TestInitialize]
         public void Initialize()
         {
-            random = new Random(DateTime.Now.Millisecond);
+            random = new Random();
         }
 
         [TestMethod]
